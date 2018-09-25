@@ -14,6 +14,9 @@ class Solution:
                 break
             else:
                 if nums[mid] > nums[-1]:
+
+
+
                     begin = mid + 1
                 else:
                     end = mid - 1
@@ -24,7 +27,6 @@ class Solution:
         if self.dichotomy(mid, len(nums) - 1, nums, target) != -1:
             return self.dichotomy(mid, len(nums) - 1, nums, target)
         return -1
-
 
     #
     def judge(self, nums, flag):

@@ -5,6 +5,7 @@ class Solution:
         :type val: int
         :rtype: int
         """
+        
         i = 0
         n = len(nums)
         j = 0
