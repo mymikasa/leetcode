@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func countGoodTriplets(arr []int, a int, b int, c int) int {
 	count := 0
 
@@ -25,12 +23,12 @@ func abs(a int) int {
 	return 0 - a
 }
 
-func main() {
-	arr := []int{3, 0, 1, 1, 9, 7}
-	a := 7
-	b := 3
-	c := 2
+// func main() {
+// 	arr := []int{3, 0, 1, 1, 9, 7}
+// 	a := 7
+// 	b := 3
+// 	c := 2
 
-	fmt.Println(countGoodTriplets(arr, a, b, c))
+// 	fmt.Println(countGoodTriplets(arr, a, b, c))
 
-}
+// }
