@@ -1,10 +1,10 @@
-package main
+package leetcode
 
 import (
 	"sort"
 )
 
-func merge(nums1 []int, m int, nums2 []int, n int) {
+func Merge(nums1 []int, m int, nums2 []int, n int) {
 	sort.Ints(append(nums1[:m], nums2...))
 }
 

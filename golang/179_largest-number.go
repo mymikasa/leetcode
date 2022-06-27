@@ -1,11 +1,11 @@
-package main
+package leetcode
 
 import (
 	"sort"
 	"strconv"
 )
 
-func largestNumber(nums []int) string {
+func LargestNumber(nums []int) string {
 	sort.Slice(nums, func(i, j int) bool {
 		x, y := nums[i], nums[j]
 		sx, sy := 10, 10

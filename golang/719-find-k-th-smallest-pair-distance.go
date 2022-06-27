@@ -1,9 +1,9 @@
-package main
+package leetcode
 
 import "sort"
 
 // copy answer
-func smallestDistancePair(nums []int, k int) int {
+func SmallestDistancePair(nums []int, k int) int {
 	sort.Ints(nums)
 
 	return sort.Search(nums[len(nums)-1]-nums[0], func(mid int) bool {

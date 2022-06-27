@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 type TreeNode struct {
 	Val   int
@@ -6,7 +6,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func sumRootToLeaf(root *TreeNode) int {
+func SumRootToLeaf(root *TreeNode) int {
 	return dfs(root, 0)
 }
 

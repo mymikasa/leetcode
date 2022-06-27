@@ -1,8 +1,8 @@
-package main
+package leetcode
 
 import "sort"
 
-func findPairs(nums []int, k int) int {
+func FindPairs(nums []int, k int) int {
 	sort.Ints(nums)
 
 	r, lenth := 0, len(nums)

@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func hammingWeight(num uint32) int {
+func HammingWeight(num uint32) int {
 	ans := 0
 
 	for num != 0 {

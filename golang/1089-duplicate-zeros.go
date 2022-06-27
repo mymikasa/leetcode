@@ -1,9 +1,9 @@
-package main
+package leetcode
 
 //[1,0,2,3,0,4,5,0]
 //[1,0,0,2,3,0,0,4]
 
-func duplicateZeros(arr []int) {
+func DuplicateZeros(arr []int) {
 	r := 0
 	lenth := len(arr)
 	ar := 0

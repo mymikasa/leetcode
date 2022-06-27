@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func countGoodTriplets(arr []int, a int, b int, c int) int {
+func CountGoodTriplets(arr []int, a int, b int, c int) int {
 	count := 0
 
 	for i := 0; i < len(arr); i++ {

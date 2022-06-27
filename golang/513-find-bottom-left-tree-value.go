@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func findBottomLeftValue(root *TreeNode) int {
+func FindBottomLeftValue(root *TreeNode) int {
 	cur := 0
 	res := 0
 

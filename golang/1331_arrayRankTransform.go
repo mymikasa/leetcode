@@ -1,8 +1,8 @@
-package main
+package leetcode
 
 import "sort"
 
-func arrayRankTransform(arr []int) []int {
+func ArrayRankTransform(arr []int) []int {
 
 	temp := make([]int, len(arr))
 	copy(temp, arr)

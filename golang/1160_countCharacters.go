@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func countCharacters(words []string, chars string) int {
+func CountCharacters(words []string, chars string) int {
 	chMap := make(map[byte]int)
 
 	for i := range chars {

@@ -1,12 +1,12 @@
-package main
+package leetcode
 
-func reverse(a []int) {
+func Reverse(a []int) {
 	for i, n := 0, len(a); i < n/2; i++ {
 		a[i], a[n-1-i] = a[n-1-i], a[i]
 	}
 }
 
-func nextPermutation(nums []int) {
+func NextPermutation(nums []int) {
 
 	l := len(nums)
 	change := -1
@@ -25,7 +25,7 @@ func nextPermutation(nums []int) {
 
 	}
 	if change == -1 {
-		reverse(nums)
+		Reverse(nums)
 	} else {
 		nums[ind], nums[change] = nums[change], nums[ind]
 

@@ -1,8 +1,8 @@
-package main
+package leetcode
 
 type pair struct{ x, y int }
 
-func judge(r int, c int, n int, par [][]int) bool {
+func Judge(r int, c int, n int, par [][]int) bool {
 
 	if c >= n || r >= n || c < 0 || r < 0 || par[r][c] > 0 {
 		return false
@@ -13,7 +13,7 @@ func judge(r int, c int, n int, par [][]int) bool {
 
 var dirs = []pair{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
 
-func generateMatrix(n int) [][]int {
+func GenerateMatrix(n int) [][]int {
 
 	res := make([][]int, n)
 
@@ -26,7 +26,7 @@ func generateMatrix(n int) [][]int {
 	for i := 1; i <= n*n; i++ {
 
 		//  当前位置合理
-		if judge(row, col, n, res) {
+		if Judge(row, col, n, res) {
 			res[row][col] = i
 		} else {
 			i -= 1
@@ -43,7 +43,7 @@ func generateMatrix(n int) [][]int {
 	return res
 }
 
-func main() {
-	// n := 3
-	generateMatrix(3)
-}
+// func main() {
+// 	// n := 3
+// 	generateMatrix(3)
+// }

@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func generate(numRows int) [][]int {
+func Generate(numRows int) [][]int {
 	res := make([][]int, numRows)
 
 	for i := range res {
@@ -34,7 +34,7 @@ func generate(numRows int) [][]int {
 
 // }
 
-func getRow(rowIndex int) []int {
+func GetRow(rowIndex int) []int {
 	row := make([]int, rowIndex+1)
 	row[0] = 1
 	for i := 1; i <= rowIndex; i++ {

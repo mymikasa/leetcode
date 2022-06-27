@@ -1,6 +1,6 @@
-package main
+package leetcode
 
-func convertToTitle(columnNumber int) string {
+func ConvertToTitle(columnNumber int) string {
 	ans := []byte{}
 
 	for columnNumber > 0 {
