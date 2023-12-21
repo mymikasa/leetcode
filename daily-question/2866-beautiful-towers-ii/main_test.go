@@ -60,7 +60,7 @@ func Test_prefixSum(t *testing.T) {
 			args: args{
 				heights: []int{6, 5, 2, 1, 5, 4, 4, 2},
 			},
-			want:  []int64{6, 10, 6, 4, 9, 9, 10, 9},
+			want:  []int64{6, 10, 6, 4, 9, 12, 16, 12},
 			want1: []int64{18, 12, 7, 5, 15, 10, 6, 2},
 		},
 		{
@@ -69,7 +69,7 @@ func Test_prefixSum(t *testing.T) {
 				heights: []int{1, 2, 3, 4, 5, 3},
 			},
 			want:  []int64{1, 3, 6, 10, 15, 15},
-			want1: []int64{18, 12, 7, 5, 15, 10, 6, 2},
+			want1: []int64{6, 10, 12, 11, 8, 3},
 		},
 	}
 	for _, tt := range tests {
